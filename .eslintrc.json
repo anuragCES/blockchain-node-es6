@@ -1,0 +1,61 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "jest": true
+    },
+    "emcaFeatures": {
+        "jsx": true,
+        "modules": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+        "esri": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+        "arrow-spacing": ["error", { "before": true, "after": true }],
+        "block-spacing": ["error", "never"],
+        "brace-style": ["error",  "1tbs", { "allowSingleLine": true }],
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "eqeqeq": ["error", "always", { "null": "ignore" }],
+        "key-spacing": [2, { "beforeColon": false, "afterColon": true }],
+        "keyword-spacing": ["error", { "before": true, "after": true }],
+        "linebreak-style": ["error", "windows"],
+        "no-console": 0,
+        "no-constant-condition": 0,
+        "no-mixed-spaces-and-tabs": 2,
+        "no-multi-spaces": 2,
+        "no-redeclare": 2,
+        "no-trailing-spaces": 2,
+        "no-unreachable": 2,
+        "no-unused-vars": 1,
+        "no-use-before-define": ["error", { "functions": false, "classes": false, "variables": false }],
+        "object-curly-spacing": [2, "always"],
+        "quotes": ["error", "double"],
+        "react/jsx-uses-react": 2,
+        "react/jsx-uses-vars": 2,
+        "react/no-did-mount-set-state": 2,
+        "react/no-did-update-set-state": 2,
+        "react/prop-types": 2,
+        "react/react-in-jsx-scope": 2,
+        "semi": ["error", "always"],
+        "semi-spacing": ["error", {"before": false, "after": true}],
+        "space-before-blocks": ["error"],
+        "space-before-function-paren": [2, {"anonymous": "always", "named": "never"}],
+        "space-in-parens": [2, "never"],
+        "space-infix-ops": ["error", {"int32Hint": false}],
+        "strict": [2, "never"]
+    }
+}
